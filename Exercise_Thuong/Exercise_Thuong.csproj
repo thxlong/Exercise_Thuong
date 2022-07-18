@@ -46,6 +46,7 @@
     <Compile Include="BT_If-else.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="tinhChuViDienTich.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
