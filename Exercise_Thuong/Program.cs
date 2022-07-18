@@ -12,7 +12,7 @@ namespace Exercise_Thuong
         static void Main(string[] args)
         {
             Console.OutputEncoding = Encoding.UTF8;
-            
+
             int numberChooseEx = 0;
             InDeBai();
             ChooseExercise(numberChooseEx);
@@ -31,9 +31,10 @@ namespace Exercise_Thuong
             Console.WriteLine(bai3);
             Console.WriteLine("--------------------------");
         }
-        static void ChooseExercise(int i) 
+        static void ChooseExercise(int i)
         {
             BT_If_else bt = new BT_If_else();
+            tinhChuViDienTich btCV = new tinhChuViDienTich();
             Console.Write("Nhập số để chọn kết quả bài tập: ");
             i = int.Parse(Console.ReadLine());
             while (i < 0 || i > 10)
@@ -47,15 +48,23 @@ namespace Exercise_Thuong
                     bt.ex_5();
                     Console.ReadLine();
                     break;
+
+                case 2:
+                    btCV.ex1();
+                    Console.ReadLine();
+                    break;
             }
+
         }
 
-        static void NhapSoKhongHopLe(int i) 
+
+
+        static void NhapSoKhongHopLe(int i)
         {
             Console.Write("Số {0} bạn nhập không hợp lệ! Vui lòng nhập lại: ", i);
         }
 
-        
+
         #endregion
     }
 }
