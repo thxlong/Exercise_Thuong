@@ -8,5 +8,9 @@ namespace Exercise_Thuong
 {
     public class Class1
     {
+        public void ahihi()
+        {
+            Console.WriteLine("ahihi");
+        }
     }
 }
